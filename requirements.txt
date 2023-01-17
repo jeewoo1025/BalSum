@@ -1,0 +1,8 @@
+bert-score==0.3.11
+nltk==3.7
+compare-mt==0.2.11
+sentencepiece==0.1.96
+transformers==4.23.1
+huggingface-hub==0.10.1
+torch==1.11.0
+wandb==0.12.9
