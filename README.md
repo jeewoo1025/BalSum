@@ -1,4 +1,8 @@
-# BalSum
+# BalSum: Balancing Lexical and Semantic Quality in Abstractive Summarization
+This repository contains the code for our paper "Balancing Lexical and Semantic Quality in Abstractive Summarization". 
+
+## Overview
+We propose a novel training method in which a re-ranker balances lexical and semantic quality. Based on a two-stage framework, our model, named **BalSum**, is trained on multi-task learning. We directly reflect the ROUGE score difference on a ranking loss to preserve the lexical quality as much as possible. Then, we use a contrastive loss with instance weighting to identify summaries whose meanings are close to the document. Specifically, we define novel false positives (semantic mistakes) and present a strategy to reduce their influence in ranking.
 
 ## How to Install
 ### Requirements
