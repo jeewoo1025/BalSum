@@ -129,9 +129,6 @@ class Similarity(nn.Module):
 
 
 class BalSum(nn.Module):
-    """
-        Abstractive Summarization to Sentence Embeddings
-    """
     def __init__(self, encoder, pad_token_id, cls_token_id, hidden_size, temp, gpuid):
         super(BalSum, self).__init__()
 
