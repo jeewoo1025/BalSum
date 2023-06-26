@@ -50,3 +50,8 @@ To evaluate BalSum, please change `MODEL_PATH` on `run_evaluate.sh` and run belo
 bash run_evaluate.sh
 ```
 `MODEL_PATH` should be a subdirectory in the `./cache_cnndm` or `./cache_xsum`.
+
+## Citation (Will Be Updated!)
+Please cite our paper if you use BalSum in your work:
+```
+```
