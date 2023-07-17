@@ -1,5 +1,5 @@
 # BalSum: Balancing Lexical and Semantic Quality in Abstractive Summarization
-This repository contains the code for our paper "[Balancing Lexical and Semantic Quality in Abstractive Summarization (ACL short, 2023)](https://arxiv.org/abs/2305.09898)". 
+This repository contains the code for our paper "[Balancing Lexical and Semantic Quality in Abstractive Summarization (ACL short, 2023)](https://aclanthology.org/2023.acl-short.56/)". 
 
 ## Overview
 We propose a novel training method in which a re-ranker balances lexical and semantic quality. Based on a two-stage framework, our model, named **BalSum**, is trained on multi-task learning. We directly reflect the ROUGE score difference on a ranking loss to preserve the lexical quality as much as possible. Then, we use a contrastive loss with instance weighting to identify summaries whose meanings are close to the document. Specifically, we define novel false positives (semantic mistakes) and present a strategy to reduce their influence in ranking.
@@ -51,7 +51,19 @@ bash run_evaluate.sh
 ```
 `MODEL_PATH` should be a subdirectory in the `./cache_cnndm` or `./cache_xsum`.
 
-## Citation (Will Be Updated!)
+## Citation
 Please cite our paper if you use BalSum in your work:
 ```
+@inproceedings{sul-choi-2023-balancing,
+    title = "Balancing Lexical and Semantic Quality in Abstractive Summarization",
+    author = "Sul, Jeewoo  and  Choi, Yong Suk",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.56",
+    pages = "637--647",
+    abstract = "An important problem of the sequence-to-sequence neural models widely used in abstractive summarization is exposure bias. To alleviate this problem, re-ranking systems have been applied in recent years. Despite some performance improvements, this approach remains underexplored. Previous works have mostly specified the rank through the ROUGE score and aligned candidate summaries, but there can be quite a large gap between the lexical overlap metric and semantic similarity. In this paper, we propose a novel training method in which a re-ranker balances the lexical and semantic quality. We further newly define false positives in ranking and present a strategy to reduce their influence. Experiments on the CNN/DailyMail and XSum datasets show that our method can estimate the meaning of summaries without seriously degrading the lexical aspect. More specifically, it achieves an 89.67 BERTScore on the CNN/DailyMail dataset, reaching new state-of-the-art performance. Our code is publicly available at https://github.com/jeewoo1025/BalSum.",
+}
 ```
