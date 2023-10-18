@@ -45,6 +45,7 @@ python main.py --cuda --gpuid 0 -l --config cnndm --wandb CNNDM_train
 ```
 
 ### Evaluation
+For ROUGE calculation, we use the standard [ROUGE Perl Package](https://github.com/summanlp/evaluation/tree/master/ROUGE-RELEASE-1.5.5). We lowercased and tokenized (using PTB Tokenizer) texts before calculating ROUGE scores. 
 To evaluate BalSum, please change `MODEL_PATH` on `run_evaluate.sh` and run below script:
 ```python
 bash run_evaluate.sh
