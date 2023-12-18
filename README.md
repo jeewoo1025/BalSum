@@ -34,7 +34,7 @@ We experiment on two datasets.
 
 ### Prepare Candidate Summaries
 We referred to [BRIO](https://github.com/yixinL7/BRIO) code when we generated and preprocessed candidate summaries. 
-Additionally, I measured cosine-similarity between the reference and each candidate summaries using [SimCSE model](https://github.com/princeton-nlp/SimCSE) for instance weighting strategy. Then, we classify them above each threshold (~-0.9) and save them in the dateset file by the threshold.
+Additionally, I measured cosine-similarity between the reference and each candidate summaries using [SimCSE model](https://github.com/princeton-nlp/SimCSE) for instance weighting strategy. Then, we classify them above each threshold (~0.9) and save them in the dateset file by the threshold.
 
 ## How to Run
 ### Training
